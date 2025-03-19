@@ -33,4 +33,8 @@ public class Quadrado {
 		System.out.println("==================");
 	}
 
-}
+		// TODO Auto-generated method stub
+		
+	}
+
+
