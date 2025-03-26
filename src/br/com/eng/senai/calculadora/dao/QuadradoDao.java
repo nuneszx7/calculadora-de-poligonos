@@ -3,6 +3,7 @@ package br.com.eng.senai.calculadora.dao;
 import java.util.Scanner;
 
 import br.com.eng.senai.calculadora.model.Quadrado;
+import br.com.eng.senai.calculadora.model.ui.Menu;
 
 public class QuadradoDao {
 	
@@ -21,8 +22,8 @@ public class QuadradoDao {
 		quadrado.resultado();
 		
 		//Fechar um objeto scanner (remover da memória)
-		leitor.close();
 		
+		Menu.continuar(leitor, "Pedro");
 		
 	}
 	

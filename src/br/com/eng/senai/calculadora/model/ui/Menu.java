@@ -32,8 +32,20 @@ public class Menu {
 			System.out.println("Esta opção ainda não foi implementada");
 		}
 		
-		
 	}
 	
-	
+	public static void continuar (Scanner leitor, String nome) {	
+		
+		String resposta = "";
+		
+		while (!resposta.equals("S") || !resposta.equals("N")) {
+			System.out.print(nome + ", deseja continuar? Digite S para continuar ou N para sair... ");
+			resposta = leitor.next();
+		}
+		
+		if (resposta.equalsIgnoreCase("s")) {
+			Menu.mostrarMenu();
+		}
+		
+	}
 }
